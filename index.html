@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="om">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Waajira Eegumsa Naannoo Godina Saba Oromoo</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,Calibri,sans-serif;color:#173b2a;background:#fff;line-height:1.6}
+header{background:#08783f;color:white;padding:18px 6%;display:flex;align-items:center;justify-content:space-between;gap:15px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:12px}
+.logo{width:65px;height:65px;border-radius:50%;background:white;color:#08783f;display:flex;align-items:center;justify-content:center;font-size:30px;font-weight:bold;border:3px solid #d8f0df}
+.brand h1{font-size:20px;margin:0}.brand p{margin:2px 0;font-size:13px}
+.lang button{border:1px solid white;background:transparent;color:white;border-radius:18px;padding:6px 10px;margin:2px;cursor:pointer}
+.lang button.active,.lang button:hover{background:white;color:#08783f}
+nav{position:sticky;top:0;background:white;box-shadow:0 2px 10px #0001;z-index:5;text-align:center;padding:10px}
+nav a{color:#17643e;text-decoration:none;font-weight:bold;margin:4px 8px;display:inline-block}
+.hero{padding:70px 8%;background:linear-gradient(135deg,#eaf8ef,#fff);text-align:center}
+.hero h2{font-size:42px;color:#075f35;margin:10px auto;max-width:900px;line-height:1.15}
+.hero p{font-size:18px;max-width:800px;margin:15px auto;color:#53665b}
+.btn{display:inline-block;background:#08783f;color:white;text-decoration:none;padding:11px 20px;border-radius:7px;font-weight:bold}
+section{padding:55px 8%;max-width:1200px;margin:auto}
+section h2{text-align:center;color:#08783f;margin-bottom:30px;font-size:30px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px}
+.card{padding:22px;border-radius:12px;background:#f4faf6;border:1px solid #dceee1}
+.card h3{color:#08783f;margin-top:0}
+.about{background:#f8fbf9}
+.contact{background:#eef8f1}
+footer{background:#075f35;color:white;text-align:center;padding:25px 8%}
+.hide{display:none}
+@media(max-width:600px){.hero h2{font-size:31px}.brand h1{font-size:16px}section{padding:40px 5%}}
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="brand">
+<div class="logo">🌿</div>
+<div>
+<h1>Waajira Eegumsa Naannoo Godina Saba Oromoo</h1>
+<p>Oromo Zone Environmental Protection Office</p>
+</div>
+</div>
+<div class="lang">
+<button class="active" onclick="setLang('om')">Oromoo</button>
+<button onclick="setLang('am')">አማርኛ</button>
+<button onclick="setLang('en')">English</button>
+</div>
+</header>
+
+<nav>
+<a href="#home" data-om="Mana" data-am="መነሻ" data-en="Home">Mana</a>
+<a href="#about" data-om="Waa'ee Keenya" data-am="ስለ እኛ" data-en="About Us">Waa'ee Keenya</a>
+<a href="#activities" data-om="Hojiiwwan" data-am="ተግባራት" data-en="Activities">Hojiiwwan</a>
+<a href="#news" data-om="Oduu" data-am="ዜና" data-en="News">Oduu</a>
+<a href="#documents" data-om="Galmeewwan" data-am="ሰነዶች" data-en="Documents">Galmeewwan</a>
+<a href="#contact" data-om="Qunnamtii" data-am="አድራሻ" data-en="Contact">Qunnamtii</a>
+</nav>
+
+<div id="home" class="hero">
+<div id="om">
+<h2>Naannoo Keenya Har'a Eegnee Boruuf Haa Dhaalchifnu!</h2>
+<p>Waajira Eegumsa Naannoo Godina Saba Oromoo — eegumsa naannoo, bosonaa, qabeenya uumamaa fi baay'ina lubbu-qabeeyyii cimsuuf hojjetu.</p>
+<a class="btn" href="#about">Waa'ee Keenya</a>
+</div>
+
+<div id="am" class="hide">
+<h2>አካባቢያችንን ዛሬ ጠብቀን ለነገ እናስረክብ!</h2>
+<p>የኦሮሞ ዞን አካባቢ ጥበቃ ጽ/ቤት — አካባቢን፣ ደንን፣ የተፈጥሮ ሀብትን እና የብዝሃ ሕይወትን ለመጠበቅ የሚሰራ ተቋም።</p>
+<a class="btn" href="#about">ስለ እኛ</a>
+</div>
+
+<div id="en" class="hide">
+<h2>Protect Our Environment Today for a Sustainable Tomorrow!</h2>
+<p>Oromo Zone Environmental Protection Office — working to protect the environment, forests, natural resources and biodiversity.</p>
+<a class="btn" href="#about">About Us</a>
+</div>
+</div>
+
+<section id="about">
+<h2 data-om="Waa'ee Keenya" data-am="ስለ እኛ" data-en="About Us">Waa'ee Keenya</h2>
+<div id="about-om">
+<p>Waajirri Eegumsa Naannoo Godina Saba Oromoo hojiiwwan eegumsa naannoo, kunuunsa bosonaa, misooma qabeenya uumamaa, jijjiirama qilleensaa fi hubannoo hawaasaa irratti xiyyeeffatee hojjetu.</p>
+</div>
+<div id="about-am" class="hide">
+<p>የኦሮሞ ዞን አካባቢ ጥበቃ ጽ/ቤት የአካባቢ ጥበቃ፣ የደን እንክብካቤ፣ የተፈጥሮ ሀብት ልማት፣ የአየር ንብረት ለውጥ እና የህብረተሰብ ግንዛቤ ላይ ይሰራል።</p>
+</div>
+<div id="about-en" class="hide">
+<p>The Oromo Zone Environmental Protection Office works on environmental protection, forest conservation, natural resource management, climate change awareness and community engagement.</p>
+</div>
+</section>
+
+<section id="activities" class="about">
+<h2 data-om="Hojiiwwan Keenya" data-am="የስራ መስኮቶቻችን" data-en="Our Activities">Hojiiwwan Keenya</h2>
+<div class="cards">
+<div class="card">
+<h3>🌳</h3>
+<h3 data-om="Eegumsa Bosonaa" data-am="የደን ጥበቃ" data-en="Forest Protection">Eegumsa Bosonaa</h3>
+<p data-om="Kunuunsa fi misooma bosonaa fi biqiltuuwwan." data-am="የደን እና ችግኝ እንክብካቤና ልማት።" data-en="Forest conservation and tree development.">Kunuunsa fi misooma bosonaa fi biqiltuuwwan.</p>
+</div>
+<div class="card">
+<h3>🌱</h3>
+<h3 data-om="Eegumsa Naannoo" data-am="የአካባቢ ጥበቃ" data-en="Environmental Protection">Eegumsa Naannoo</h3>
+<p data-om="Faalama naannoo ittisuu fi qulqullina naannoo eegu." data-am="የአካባቢ ብክለትን መከላከልና ንጽህናን መጠበቅ።" data-en="Preventing pollution and protecting environmental quality.">Faalama naannoo ittisuu fi qulqullina naannoo eegu.</p>
+</div>
+<div class="card">
+<h3>🌍</h3>
+<h3 data-om="Jijjiirama Qilleensaa" data-am="የአየር ንብረት ለውጥ" data-en="Climate Change">Jijjiirama Qilleensaa</h3>
+<p data-om="Hawaasaaf hubannoo fi furmaata jijjiirama qilleensaa." data-am="ስለ አየር ንብረት ለውጥ ግንዛቤና መፍትሄዎች።" data-en="Climate change awareness and solutions.">Hawaasaaf hubannoo fi furmaata jijjiirama qilleensaa.</p>
+</div>
+<div class="card">
+<h3>🐾</h3>
+<h3 data-om="Baay'ina Lubbu-qabeeyyii" data-am="የብዝሃ ሕይወት ጥበቃ" data-en="Biodiversity">Baay'ina Lubbu-qabeeyyii</h3>
+<p data-om="Bineensotaa fi biqiltoota uumamaa eegu." data-am="የዱር እንስሳትና እፅዋትን መጠበቅ።" data-en="Protecting wildlife and plant diversity.">Bineensotaa fi biqiltoota uumamaa eegu.</p>
+</div>
+</div>
+</section>
+
+<section id="news">
+<h2 data-om="Oduu fi Beeksisa" data-am="ዜና እና ማስታወቂያ" data-en="News & Announcements">Oduu fi Beeksisa</h2>
+<div class="cards">
+<div class="card">
+<h3 data-om="Beeksisa" data-am="ማስታወቂያ" data-en="Announcement">Beeksisa</h3>
+<p data-om="Oduu fi beeksisawwan Waajirichaa as irratti ni maxxanfamu." data-am="የጽ/ቤቱ ዜናዎችና ማስታወቂያዎች እዚህ ይታተማሉ።" data-en="Office news and announcements will be published here.">Oduu fi beeksisawwan Waajirichaa as irratti ni maxxanfamu.</p>
+</div>
+</div>
+</section>
+
+<section id="documents" class="about">
+<h2 data-om="Galmeewwan" data-am="ሰነዶች" data-en="Documents">Galmeewwan</h2>
+<div class="cards">
+<div class="card">
+<h3>📄</h3>
+<p data-om="Karoora, gabaasa, qajeelfama fi sanadoota hojii Waajirichaa." data-am="የጽ/ቤቱ ዕቅዶች፣ ሪፖርቶች፣ መመሪያዎችና ሌሎች ሰነዶች።" data-en="Plans, reports, guidelines and other office documents.">Karoora, gabaasa, qajeelfama fi sanadoota hojii Waajirichaa.</p>
+</div>
+</div>
+</section>
+
+<section id="contact" class="contact">
+<h2 data-om="Qunnamtii Nu Waliin Godhaa" data-am="ያግኙን" data-en="Contact Us">Qunnamtii Nu Waliin Godhaa</h2>
+<div id="contact-om">
+<p><b>Waajira:</b> Waajira Eegumsa Naannoo Godina Saba Oromoo</p>
+<p><b>Godina:</b> Godina Saba Oromoo, Oromiyaa/Ethiopia</p>
+<p>Odeeffannoo quunnamtii sirrii fi teessoo waajjiraa as irratti yeroo itti aanu ni dabalama.</p>
+</div>
+<div id="contact-am" class="hide">
+<p><b>ጽ/ቤት:</b> የኦሮሞ ዞን አካባቢ ጥበቃ ጽ/ቤት</p>
+<p>ትክክለኛ የመገኛ አድራሻና ስልክ መረጃ በቀጣይ ይጨመራል።</p>
+</div>
+<div id="contact-en" class="hide">
+<p><b>Office:</b> Oromo Zone Environmental Protection Office</p>
+<p>Official contact details and office address will be added later.</p>
+</div>
+</section>
+
+<footer>
+<p>© 2026 <span id="footer">Waajira Eegumsa Naannoo Godina Saba Oromoo</span></p>
+<p>Environmental Protection • Forest • Natural Resources • Biodiversity</p>
+</footer>
+
+<script>
+function setLang(lang){
+document.querySelectorAll('.lang button').forEach(b=>b.classList.remove('active'));
+document.querySelector('.lang button[onclick="setLang(\''+lang+'\')"]').classList.add('active');
+
+document.querySelectorAll('[data-om]').forEach(e=>{
+e.textContent=e.getAttribute('data-'+lang);
+});
+
+['om','am','en'].forEach(x=>{
+document.querySelectorAll('#'+x+',#about-'+x+',#contact-'+x).forEach(e=>{
+e.classList.toggle('hide',x!==lang);
+});
+});
+document.documentElement.lang=lang;
+}
+</script>
+
+</body>
+</html>
